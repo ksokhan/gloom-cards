@@ -1,32 +1,85 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+}
+
+.character-panel {
+  position: absolute;
+  top: 24px;
+  left: 26px;
+  user-select: none;
+}
+
+.character-panel::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  box-sizing: border-box;
+  height: 7px;
+  width: 7px;
+  border-style: solid;
+  border-color: #111;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+}
+
+.character-picker {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  height: 34px;
+  background: #eee;
+  border: solid 1px #eee;
+  border-radius: 6px;
+  min-width: 160px;
+  font-size: 16px;
+  text-indent: 10px;
+  text-transform: capitalize;
+  color: #222;
+  cursor: pointer;
+}
+
+.character-picker:hover {
+  background: #e9e9e9;
+}
+
+.character-picker:focus {
+  border-color: #ccc;
+  outline: none;
+}
+
+.edit-cards-panel {
+  position: absolute;
+  top: 24px;
+  right: 26px;
+  color: #aaa;
+  user-select: none;
+  font-size: 16px;
+}
+
+.edit-cards {
+  color: #222;
+  height: 36px;
+  background: #eee;
+  display: inline-block;
+  line-height: 36px;
+  padding: 0 18px;
+  margin-left: 20px;
+  min-width: 60px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-cards:hover {
+  background: #e9e9e9;
+}
+
+.card-container {
+  flex: 1;
+  padding: 90px 26px 80px;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

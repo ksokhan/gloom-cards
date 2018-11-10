@@ -1,0 +1,77 @@
+.card {
+  border-radius: 10px;
+  cursor: grab;
+  margin: 10px;
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 12px 22px rgba(0,0,0,0.15);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 16px 22px rgba(0,0,0,0.35);
+}
+
+.card--hidden {
+  opacity: 0.4;
+}
+
+.card--dragged {
+  opacity: 0;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+
+.cardToggle {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+}
+.cardToggle input {
+  opacity: 0;
+}
+
+.cardToggle:before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: rgba(100,100,100,0.2);
+  cursor: pointer;
+  border: solid 3px #fff;
+  border-radius: 6px;
+  box-shadow: 0 12px 22px rgba(0,0,0,0.4);
+}
+
+.cardToggle:hover:before {
+  background: #000;
+  box-shadow: 0 12px 22px rgba(0,0,0,0.4), 0 0 0 4px rgba(0,0,0,0.6);
+}
+
+.cardToggle.cardToggleChecked:before {
+  background: #00CD70;
+}
+
+.cardToggle.cardToggleChecked:after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow:
+    2px 0 0 white,
+    4px 0 0 white,
+    4px -2px 0 white,
+    4px -4px 0 white,
+    4px -6px 0 white,
+    4px -8px 0 white;
+  transform: rotate(45deg);
+}
