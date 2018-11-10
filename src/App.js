@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import './App.css';
-import Card from './components/Card';
-import update from 'immutability-helper';
+import React, { Component } from 'react'
+import './App.css'
+import update from 'immutability-helper'
+import Card from './components/Card'
+import { Header } from './components/Header'
 import { classes } from './data'
 
 class App extends Component {
@@ -18,7 +19,7 @@ class App extends Component {
   }
 
   init(character) {
-    const {total, starting } = classes[character];
+    const {total, starting } = classes[character]
     const data = [...Array(total)].map( (e, index) =>
       ({id: index+1, visible: starting > index })
     )
@@ -29,7 +30,7 @@ class App extends Component {
   load(character) {
     const data = window.localStorage.getItem(character)
     if (data) {
-      this.setState({ cards: JSON.parse(data) });
+      this.setState({ cards: JSON.parse(data) })
     } else {
       this.init(character)
     }
@@ -72,34 +73,22 @@ class App extends Component {
     , this.save)
   }
 
+  toggleEditing() {
+    this.setState({editing: !this.state.editing})
+  }
+
   render() {
-    const { editing, character } = this.state
+    const { character, cards } = this.state
     return (
       <div className="App">
-        <div className="character-panel">
-          <select
-            className="character-picker"
-            value={character}
-            onChange={(event) => this.switchCharacter(event.target.value)}
-            >
-            {Object.keys(classes).sort().map( (item, i) => (
-              <option key={i}>{item}</option>
-            ))}
-          </select>
-        </div>
-
-        <div className="edit-cards-panel">
-          {this.state.cards.reduce( (prev, card) => {
-            return card.visible ? prev + 1 : prev
-          }, 0)} of {this.state.cards.length} cards selected
-
-          <span
-            className="edit-cards"
-            onClick={() => this.setState({editing: !this.state.editing})}
-          >
-            {editing ? "Done" : "Edit available cards"}
-          </span>
-        </div>
+        <Header
+          switchCharacter={(value) => this.switchCharacter(value)}
+          toggleEditing={() => this.toggleEditing()}
+          editing={this.state.editing}
+          cards={cards}
+          classes={classes}
+          character={character}
+        />
 
         <div className="card-container">
           {this.state.cards.length === 0 &&
