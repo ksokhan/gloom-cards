@@ -5,6 +5,7 @@
   user-select: none;
 }
 
+
 .character-panel::after {
   content: '';
   position: absolute;
@@ -43,6 +44,19 @@
   outline: none;
 }
 
+@media (max-width: 600px) {
+  .character-panel {
+    position: relative;
+    top: 0; left: 0;
+    margin: 24px 24px 12px;
+    display: flex;
+  }
+
+  .character-picker {
+    flex: 1
+  }
+}
+
 .edit-cards-panel {
   position: absolute;
   top: 24px;
@@ -50,6 +64,19 @@
   color: #aaa;
   user-select: none;
   font-size: 16px;
+  line-height: 36px;
+}
+
+@media (max-width: 600px) {
+  .edit-cards-panel {
+    position: relative;
+    left: 0; top: 0;
+    margin: 12px 24px 0;
+  }
+
+  .edit-cards {
+    float: right;
+  }
 }
 
 .edit-cards {
