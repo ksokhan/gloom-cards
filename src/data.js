@@ -19,6 +19,10 @@ export const classes = {
     total: 27,
     starting: 11
   },
+  scoundrel: {
+    total: 28,
+    starting: 12,
+  },
   sun: {
     total: 30,
     starting: 14,
