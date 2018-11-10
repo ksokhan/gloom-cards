@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "immutability-helper": "^2.8.1",
     "react": "^16.6.1",
+    "react-dnd": "^6.0.0",
+    "react-dnd-html5-backend": "^6.0.0",
     "react-dom": "^16.6.1",
     "react-scripts": "2.1.1"
   },
