@@ -9,6 +9,7 @@ An app to browse and manage your character ability cards for Gloomhaven.
 
 
 ## Upcoming
+- Fix card changes in 2nd printing (https://boardgamegeek.com/thread/1761512/official-second-printing-change-log)
 - Currently only showing classes I've unlocked
 - Enhancements on cards
 
