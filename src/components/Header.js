@@ -16,8 +16,8 @@ export const Header = ({
         value={character}
         onChange={(event) => switchCharacter(event.target.value)}
         >
-        {Object.keys(classes).sort().map( (item, i) => (
-          <option key={i}>{item}</option>
+        {Object.keys(classes).map( (item, i) => (
+          <option key={i}>{item}{classes[item].locked ? ' (locked)' : ''}</option>
         ))}
       </select>
     </div>
