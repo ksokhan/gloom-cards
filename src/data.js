@@ -9,7 +9,7 @@ export const classes = {
   },
   mindthief: {
     starting: 13,
-    total:28
+    total:29
   },
   scoundrel: {
     total: 28,
