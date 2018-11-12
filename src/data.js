@@ -3,7 +3,7 @@ export const classes = {
     total: 29,
     starting: 13,
   },
-  craigheart: {
+  cragheart: {
     total: 30,
     starting: 14,
   },
