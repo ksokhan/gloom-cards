@@ -23,24 +23,25 @@
 .character-picker {
   -moz-appearance: none;
   -webkit-appearance: none;
-  height: 34px;
-  background: #eee;
-  border: solid 1px #eee;
+  height: 36px;
+  background: #f6f6f6;
+  box-shadow: inset 0 3px 10px rgba(0,0,0,0.05);
+  border: none;
   border-radius: 6px;
   min-width: 160px;
   font-size: 16px;
-  text-indent: 10px;
+  text-indent: 12px;
   text-transform: capitalize;
   color: #222;
   cursor: pointer;
 }
 
 .character-picker:hover {
-  background: #e9e9e9;
+  background: #efefef;
 }
 
 .character-picker:focus {
-  border-color: #ccc;
+  border: solid 1px #ccc;
   outline: none;
 }
 
@@ -82,7 +83,8 @@
 .edit-cards {
   color: #222;
   height: 36px;
-  background: #eee;
+  background: #f6f6f6;
+  box-shadow: inset 0 3px 10px rgba(0,0,0,0.05);
   display: inline-block;
   line-height: 36px;
   padding: 0 18px;
@@ -94,5 +96,5 @@
 }
 
 .edit-cards:hover {
-  background: #e9e9e9;
+  background: #efefef;
 }

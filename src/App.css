@@ -28,3 +28,14 @@ body {
     padding: 24px 12px 30px;
   }
 }
+
+.footer {
+  color: #aaa;
+  text-align: center;
+  padding: 0 16px 40px;
+  line-height: 1.5;
+}
+
+.footer a {
+  color: #888;
+}

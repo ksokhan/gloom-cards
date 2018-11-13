@@ -13,9 +13,10 @@ export const Header = ({
     <div className="character-panel">
       <select
         className="character-picker"
-        value={character}
+        value={character || ''}
         onChange={(event) => switchCharacter(event.target.value)}
         >
+          <option value="" disabled>Pick a character</option>
         {Object.keys(classes).map( (item, i) => (
           <option key={i}>{item}{classes[item].locked ? ' (locked)' : ''}</option>
         ))}

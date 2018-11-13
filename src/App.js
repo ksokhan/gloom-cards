@@ -19,6 +19,7 @@ class App extends Component {
   }
 
   init(character) {
+    if (!character) return false
     const {total, starting } = classes[character]
     const data = [...Array(total)].map( (e, index) =>
       ({id: index+1, visible: starting > index })
@@ -37,7 +38,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const character = window.localStorage.getItem('character') || 'mindthief';
+    const character = window.localStorage.getItem('character') || null;
     this.setState({ character })
     this.load(character)
   }
@@ -91,9 +92,15 @@ class App extends Component {
         />
 
         <div className="card-container">
-          {this.state.cards.length === 0 &&
+
+          {!this.state.character &&
+            <strong style={{fontSize: 44, color: '#ddd'}}>Pick a character</strong>
+          }
+
+          {this.state.character && this.state.cards.length === 0 &&
             <span>You don't have any cards selected</span>
           }
+
           {this.state.cards.map( (item, i) => (
             <Card
               key={item.id}
@@ -106,6 +113,10 @@ class App extends Component {
               toggleCard={this.toggleCard.bind(this)}
             />
           ))}
+        </div>
+        <div className="footer">
+          Got a question, bug, or suggestion? &nbsp;
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/ksokhan/gloom-cards/issues">Submit a Github issue</a>.
         </div>
       </div>
     );
