@@ -27,5 +27,15 @@ export const classes = {
     locked: true,
     total: 30,
     starting: 14,
+  },
+  'angry-face': {
+    locked: true,
+    total: 31,
+    starting: 31,
+  },
+  triangle: {
+    locked: true,
+    total: 29,
+    starting: 29,
   }
 }

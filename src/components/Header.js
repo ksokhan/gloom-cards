@@ -18,7 +18,7 @@ export const Header = ({
         >
           <option value="" disabled>Pick a character</option>
         {Object.keys(classes).map( (item, i) => (
-          <option key={i}>{item}{classes[item].locked ? ' (locked)' : ''}</option>
+          <option value={item} key={i}>{item}{classes[item].locked ? ' (locked)' : ''}</option>
         ))}
       </select>
     </div>
