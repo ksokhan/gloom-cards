@@ -37,5 +37,10 @@ export const classes = {
     locked: true,
     total: 29,
     starting: 29,
+  },
+  'triple-spears': {
+    locked: true,
+    total: 28,
+    starting: 28,
   }
 }
