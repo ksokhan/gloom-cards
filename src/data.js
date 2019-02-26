@@ -42,5 +42,20 @@ export const classes = {
     locked: true,
     total: 28,
     starting: 28,
+  },
+  'cthulhu': {
+    locked: true,
+    total: 31,
+    starting: 31,
+  },
+  'lightning-bolt': {
+    locked: true,
+    total: 29,
+    starting: 29,
+  },
+  'music-note': {
+    locked: true,
+    total: 28,
+    starting: 28,
   }
 }
