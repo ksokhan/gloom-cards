@@ -20,9 +20,11 @@ class App extends Component {
 
   init(character) {
     if (!character) return false
-    const {total, starting } = classes[character]
+    const {total, starting, order} = classes[character]
+    //"starting = total - 16" instead of putting it in data?
     const data = [...Array(total)].map( (e, index) =>
-      ({id: index+1, visible: starting > index })
+      ({id: order ? order[index] : index+1,
+        visible: starting > index })
     )
     this.save(character, data)
     this.setState({ cards: data })
