@@ -14,7 +14,9 @@ An app to browse and manage your character ability cards for Gloomhaven.
 - Enhancements on cards
 
 ## Adding other class ability Cards
-- Pdfs are located in `public/cards/Advanced Classes`
+- Source images for all ability cards cand be found at:
+https://github.com/any2cards/gloomhaven/tree/master/images/character-ability-cards
+https://github.com/any2cards/gloomhaven/tree/master/images/character-ability-cards-revised
 - Install poppler. On mac, with homebrew you can `brew install poppler`
 - Converting pdf cards to png (poppler required): `pdftoppm -r 200 -jpeg -e SK\ Cards.pdf sun`
 - Then use automator to rename sequentially
