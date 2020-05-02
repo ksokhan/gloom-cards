@@ -79,5 +79,20 @@ export const classes = {
     locked: true,
     total: 30,
     starting: 14,
+  },
+  circles: {
+    locked: true,
+    total: 29,
+    starting: 12,
+  },
+  eclipse: {
+    locked: true,
+    total: 28,
+    starting: 12,
+  },
+  diviner: {
+    locked: true,
+    total: 28,
+    starting: 12,
   }
 }
