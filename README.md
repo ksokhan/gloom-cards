@@ -1,4 +1,7 @@
 # Gloom Cards App
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b036a5dc-1d21-4a1d-9bdb-71b96ee73714/deploy-status)](https://app.netlify.com/sites/gloomcards/deploys)
+
 An app to browse and manage your character ability cards for Gloomhaven.
 
 ## Features
