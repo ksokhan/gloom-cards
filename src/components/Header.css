@@ -45,6 +45,23 @@
   outline: none;
 }
 
+
+@media (prefers-color-scheme: dark) {
+  .character-picker {
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+  }
+
+  .character-picker:hover {
+    background: rgba(255,255,255,0.15);
+  }
+  .character-panel::after {
+    border-color: #999;
+  }
+
+}
+
+
 @media (max-width: 600px) {
   .character-panel {
     position: relative;
@@ -97,4 +114,14 @@
 
 .edit-cards:hover {
   background: #efefef;
+}
+
+@media (prefers-color-scheme: dark) {
+  .edit-cards {
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+  }
+  .edit-cards:hover {
+    background: rgba(255,255,255,0.2);
+  }
 }

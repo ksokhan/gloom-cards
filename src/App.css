@@ -39,3 +39,9 @@ body {
 .footer a {
   color: #888;
 }
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background: #111;
+  }
+}

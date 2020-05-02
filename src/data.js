@@ -69,5 +69,15 @@ export const classes = {
     starting: 12,
     order: [16, 7, 21, 27, 2, 25, 24, 20, 11, 23, 28, 15, 22, 4, 9, 6,
             8, 10, 12, 13, 18, 17, 14, 1, 26, 5, 3, 19]
+  },
+  'saw': {
+    locked: true,
+    total: 31,
+    starting: 15,
+  },
+  'two-mini': {
+    locked: true,
+    total: 30,
+    starting: 14,
   }
 }
