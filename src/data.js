@@ -91,8 +91,28 @@ export const classes = {
     starting: 12,
   },
   diviner: {
-    locked: true,
+    locked: false,
     total: 28,
     starting: 12,
+  },
+  demolitionist: {
+    locked: false,
+    total: 27,
+    starting: 12,
+  },
+  'red-guard': {
+    locked: false,
+    total: 28,
+    starting: 13,
+  },
+  voidwarden: {
+    locked: false,
+    total: 29,
+    starting: 14,
+  },
+  hatchet: {
+    locked: false,
+    total: 28,
+    starting: 13,
   }
 }
