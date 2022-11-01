@@ -17,8 +17,9 @@ An app to browse and manage your character ability cards for Gloomhaven.
 - Enhancements on cards
 
 ## Adding other class ability Cards
-- Source images for all ability cards cand be found at:
+- Source images for all ability cards can be found at:
 https://github.com/any2cards/gloomhaven/tree/master/images/character-ability-cards
 https://github.com/any2cards/gloomhaven/tree/master/images/character-ability-cards-revised
 - Then use automator to rename sequentially
 - edit `src/data.js` to add details
+- run `npm install && npm start` to run the app and confirm the new additions show up in the interface
